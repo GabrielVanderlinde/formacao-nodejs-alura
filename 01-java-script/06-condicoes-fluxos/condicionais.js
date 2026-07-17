@@ -23,3 +23,18 @@ if (notaDoAluno >= 9 && notaDoAluno <= 10) {
 } else if (notaDoAluno >= 0 && notaDoAluno <= 4) {
   console.log("Ruim");
 }
+
+// Operador Ternário
+const idade2 = 20;
+const resultado = idade2 >= 18 ? "É maior de idade" : "É menor de idade";
+console.log(resultado);
+
+notaDoAluno >= 9
+  ? console.log("Excelente")
+  : notaDoAluno >= 7
+    ? console.log("Bom")
+    : notaDoAluno >= 5
+      ? console.log("Médio")
+      : notaDoAluno >= 0
+        ? console.log("Ruim")
+        : console.log("Nota inválida");
