@@ -8,33 +8,42 @@ fs.readFile(link, "utf-8", (erro, texto) => {
   // verificaPalavrasDuplicadas(texto);
 });
 
-// criar um array de palavras
-//contar as ocorrencias
+// criar um array com as palavras
+// contar as ocorrências
 // montar um objeto com o resultado
+
+// {
+//   "web": 5,
+//   "computador": 4
+// }
+
+// /[.,\/#!$%\^&\*;:{}=\-_`~()]/g
 
 function quebraEmParagrafos(texto) {
   const paragrafos = texto.toLowerCase().split("\n");
-  const contagem = paragrafos.map((paragrafo) => {
+  const contagem = paragrafos.flatMap((paragrafo) => {
+    if (!paragrafo) return [];
     return verificaPalavrasDuplicadas(paragrafo);
   });
   console.log(contagem);
 }
 
+// [1, 2, [3, 4]]
+// [1, 2, 3, 4]
+
 function limpaPalavras(palavra) {
-  return palavra.replace(/[.,\/#!$%\^&\*;:{}=\-_~()]/g, "");
+  return palavra.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
 }
 
 function verificaPalavrasDuplicadas(texto) {
   const listaPalavras = texto.split(" ");
   const resultado = {};
-  //   objeto[propiedade] = valor;
-
+  // objeto[propriedade] = valor;
   listaPalavras.forEach((palavra) => {
     if (palavra.length >= 3) {
       const palavraLimpa = limpaPalavras(palavra);
-      resultado[palavra] = (resultado[palavraLimpa] || 0) + 1;
+      resultado[palavraLimpa] = (resultado[palavraLimpa] || 0) + 1;
     }
   });
-
   return resultado;
 }
