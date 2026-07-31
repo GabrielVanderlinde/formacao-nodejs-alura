@@ -1,16 +1,16 @@
 # 01 - JavaScript: Aprendendo a Programar
 
-📚 Curso pertencente à **Formação Node.js** da [Alura](https://www.alura.com.br/), disponibilizada via convênio corporativo com a Qualle Control.
+Curso pertencente à **Formação Node.js** da [Alura](https://www.alura.com.br/), disponibilizada via convênio corporativo com a Qualle Control.
 
 > Repositório de estudos com anotações, exercícios e principais aprendizados de cada aula do curso de JavaScript.
 
 ---
 
-## 📌 Sobre o curso
+## Sobre o curso
 
 Curso introdutório de JavaScript, cobrindo desde lógica de programação e fundamentos da linguagem até recursos modernos do ECMAScript (ES6+). Serve como base para os cursos seguintes da Formação Node.js.
 
-## ✅ Progresso
+## Progresso
 
 | # | Aula | Status |
 |---|------|--------|
@@ -27,7 +27,7 @@ Curso introdutório de JavaScript, cobrindo desde lógica de programação e fun
 | 11 | [Fundamentos Modernos do JavaScript](11-aula-fundamentos-modernos-js/README.md) | ✅ |
 | 12 | Conclusão | ✅ |
 
-## 🧠 Principais conceitos abordados
+## Principais conceitos abordados
 
 - **Lógica de programação**: algoritmos, fluxogramas, pensamento computacional.
 - **Ambiente**: instalação e uso do Node.js, execução de scripts via terminal.
@@ -40,7 +40,7 @@ Curso introdutório de JavaScript, cobrindo desde lógica de programação e fun
 - **JavaScript moderno (ES6+)**: destructuring, spread/rest, módulos (`import`/`export`), conversão de tipos.
 - **Introdução a tópicos avançados**: assincronismo (Event Loop, Promises, async/await) e orientação a objetos (`new`, classes).
 
-## 🗂️ Estrutura do repositório
+## Estrutura do repositório
 
 Cada aula possui seu próprio README com o resumo do que foi aprendido, pontos de atenção (erros comuns, pegadinhas da linguagem) e referências complementares.
 
@@ -60,11 +60,11 @@ Cada aula possui seu próprio README com o resumo do que foi aprendido, pontos d
 └── 11-aula-fundamentos-modernos-js/
 ```
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - JavaScript (ES6+)
 - Node.js
 
-## 🔗 Contexto
+## Contexto
 
 Este curso é o primeiro passo dentro da **Formação Node.js**, que faz parte da trilha de estudos apoiada pela empresa. Os próximos cursos da formação serão organizados em pastas irmãs a este repositório, mantendo a mesma estrutura de documentação por aula.
