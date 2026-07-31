@@ -1,18 +1,18 @@
 # 02 - Git e GitHub: Compartilhando e Colaborando em Projetos
 
-📚 Curso pertencente à trilha de estudos apoiada pela empresa, via [Alura](https://www.alura.com.br/).
+Curso pertencente à trilha de estudos apoiada pela empresa, via [Alura](https://www.alura.com.br/).
 
 > Repositório de estudos com os principais aprendizados do curso de Git e GitHub — versionamento, colaboração e boas práticas de repositório.
 
 ---
 
-## 📌 Sobre o curso
+## Sobre o curso
 
 Curso prático sobre versionamento de código com Git e colaboração via GitHub. Cobre desde a criação de um repositório do zero até resolução de conflitos, manipulação do histórico de commits e boas práticas de documentação de projetos.
 
 **Progresso:** 100% concluído ✅
 
-## 🗂️ Módulos do curso
+## Módulos do curso
 
 1. **Compartilhando projetos** — criação de conta e repositório no GitHub, instalação do Git, conexão do repositório local com o remoto.
 2. **Colaborando em projetos** — clonar repositórios, realizar e enviar commits, baixar alterações de colaboradores.
@@ -20,7 +20,7 @@ Curso prático sobre versionamento de código com Git e colaboração via GitHub
 4. **Voltando no tempo** — desfazer commits, `reset`, alterar e remover commits do histórico.
 5. **Mais recursos** — README, Markdown, `.gitignore`, Gist, branches e merges.
 
-## 🧠 Principais aprendizados
+## Principais aprendizados
 
 ### 1. Compartilhando projetos
 - Diferença entre **Git** (ferramenta de versionamento local) e **GitHub** (plataforma de hospedagem remota de repositórios).
@@ -58,7 +58,7 @@ Curso prático sobre versionamento de código com Git e colaboração via GitHub
 - Introdução a **branches** e **merges**.
 - Benefícios de um bom README para a qualidade e adoção de um projeto.
 
-## 📎 Cheat sheet — comandos essenciais
+## Cheat sheet — comandos essenciais
 
 ```bash
 # Configuração inicial
@@ -88,7 +88,7 @@ git checkout <branch>             # troca de branch
 git merge <branch>                # mescla uma branch na atual
 ```
 
-## ⚠️ Pontos de atenção
+## Pontos de atenção
 
 - `git reset --hard` **descarta permanentemente** as alterações — não usar sem certeza absoluta, e nunca em commits já compartilhados com outras pessoas.
 - Reescrever histórico (`amend`, `reset`, `rebase`) em commits que já foram enviados (`push`) para um repositório compartilhado pode causar divergência grave para colaboradores que já baixaram esse histórico.
@@ -96,13 +96,13 @@ git merge <branch>                # mescla uma branch na atual
 - Boas mensagens de commit valem tanto quanto código limpo: facilitam revisão, histórico e depuração futura (`git blame`, `git log`).
 - Autenticação via senha simples foi descontinuada pelo GitHub para operações Git via linha de comando — usar SSH ou token de acesso pessoal.
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - Git
 - GitHub
 - VS Code (Git integrado + Merge Editor)
 - Markdown
 
-## 🔗 Contexto
+## Contexto
 
 Curso complementar à trilha de estudos, focado em versionamento e colaboração — habilidade transversal aplicada a todos os projetos práticos desenvolvidos ao longo da formação (incluindo os da Formação Node.js).
