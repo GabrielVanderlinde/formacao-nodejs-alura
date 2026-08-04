@@ -1,5 +1,6 @@
 import express from "express";
 import dbConnect from "./config/dbConnect.js";
+import livro from "./models/livro.js";
 
 const db = await dbConnect();
 
@@ -14,46 +15,62 @@ db.once("open", () =>
 const app = express();
 app.use(express.json());
 
-const livros = [
-  { id: 1, titulo: "Senhor dos Anéis" },
-  {
-    id: 2,
-    titulo: "O Hobbit",
-  },
-];
-
-function buscarLivro(id) {
-  return livros.findIndex((livro) => livro.id === Number(id));
-}
-
 app.get("/", (req, res) => {
   res.status(200).send("Curso de Node.js API REST com Express e MongoDB");
 });
 
-app.get("/livros", (req, res) => {
-  res.status(200).json(livros);
+app.get("/livros", async (req, res) => {
+  const listaLivros = await livro.find({});
+  res.status(200).json(listaLivros);
 });
 
-app.post("/livros", (req, res) => {
-  livros.push(req.body);
-  res.status(201).send("Livro adicionado com sucesso!");
+app.post("/livros", async (req, res) => {
+  try {
+    const novoLivro = await livro.create(req.body);
+    res.status(201).json(novoLivro);
+  } catch (erro) {
+    res.status(500).json({ erro: erro.message });
+  }
 });
 
-app.get("/livros/:id", (req, res) => {
-  const index = buscarLivro(req.params.id);
-  res.status(200).json(livros[index]);
+app.get("/livros/:id", async (req, res) => {
+  try {
+    const livroEncontrado = await livro.findById(req.params.id);
+    if (!livroEncontrado) {
+      return res.status(404).json({ erro: "Livro não encontrado" });
+    }
+    res.status(200).json(livroEncontrado);
+  } catch (erro) {
+    res.status(500).json({ erro: erro.message });
+  }
 });
 
-app.put("/livros/:id", (req, res) => {
-  const index = buscarLivro(req.params.id);
-  livros[index].titulo = req.body.titulo;
-  res.status(200).json(livros);
+app.put("/livros/:id", async (req, res) => {
+  try {
+    const livroAtualizado = await livro.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true },
+    );
+    if (!livroAtualizado) {
+      return res.status(404).json({ erro: "Livro não encontrado" });
+    }
+    res.status(200).json(livroAtualizado);
+  } catch (erro) {
+    res.status(500).json({ erro: erro.message });
+  }
 });
 
-app.delete("/livros/:id", (req, res) => {
-  const index = buscarLivro(req.params.id);
-  livros.splice(index, 1);
-  res.status(200).json(livros);
+app.delete("/livros/:id", async (req, res) => {
+  try {
+    const livroExcluido = await livro.findByIdAndDelete(req.params.id);
+    if (!livroExcluido) {
+      return res.status(404).json({ erro: "Livro não encontrado" });
+    }
+    res.status(200).json(livroExcluido);
+  } catch (erro) {
+    res.status(500).json({ erro: erro.message });
+  }
 });
 
 export default app;
