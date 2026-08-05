@@ -68,6 +68,18 @@ class LivroController {
         .json({ message: `Erro ao excluir livro: ${erro.message}` });
     }
   }
+
+  static async listarLivroPorEditora(req, res) {
+    const editora = req.query.editora;
+    try {
+      const livrosPorEditora = await livro.find({ editora: editora });
+      res.status(200).json(livrosPorEditora);
+    } catch (erro) {
+      res.status(500).json({
+        message: `Erro ao listar livros por editora: ${erro.message}`,
+      });
+    }
+  }
 }
 
 export default LivroController;
