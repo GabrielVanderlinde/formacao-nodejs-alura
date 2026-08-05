@@ -1,6 +1,6 @@
 import express from "express";
 import dbConnect from "./config/dbConnect.js";
-import livro from "./models/livro.js";
+import routes from "./routes/index.js";
 
 const db = await dbConnect();
 
@@ -13,11 +13,7 @@ db.once("open", () =>
 );
 
 const app = express();
-app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.status(200).send("Curso de Node.js API REST com Express e MongoDB");
-});
+routes(app);
 
 app.post("/livros", async (req, res) => {
   try {
