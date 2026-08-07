@@ -1,4 +1,4 @@
-# 04 - Node.js: Criando uma API REST com Express e MongoDB
+# 03 - Node.js: Criando uma API REST com Express e MongoDB
 
 Curso pertencente à **Formação Node.js** da [Alura](https://www.alura.com.br/), disponibilizada via convênio corporativo.
 
