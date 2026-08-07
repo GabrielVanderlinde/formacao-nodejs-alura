@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { autorSchema } from "./autor.js";
 
 const livroSchema = new mongoose.Schema(
   {
@@ -28,6 +27,6 @@ const livroSchema = new mongoose.Schema(
   { versionKey: false },
 );
 
-const livro = mongoose.model("livros", livroSchema);
+const livro = mongoose.models.livros || mongoose.model("livros", livroSchema);
 
 export default livro;
