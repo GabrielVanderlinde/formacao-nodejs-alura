@@ -1,10 +1,18 @@
 import mongoose from "mongoose";
 
 // eslint-disable-next-line no-unused-vars
-function manipularErros(req, res, erro, next) {
+function manipularErros(erro, req, res, next) {
   if (erro instanceof mongoose.Error.CastError) {
     res.status(400).send({
       message: "Um ou mais dados foram informados de forma incorreta.",
+    });
+  } else if (erro instanceof mongoose.Error.ValidationError) {
+    const mensagensErro = Object.values(erro.errors)
+      .map((erro) => erro.message)
+      .join("; ");
+
+    res.status(400).send({
+      message: `Os Seguintes erros foram encontrados: ${mensagensErro}`,
     });
   } else {
     res.status(500).send({ message: "Erro interno no servidor" });

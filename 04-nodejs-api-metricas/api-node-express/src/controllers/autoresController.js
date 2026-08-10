@@ -22,7 +22,6 @@ class AutorController {
       } else {
         res.status(404).send({ message: "Id do Autor não localizado." });
       }
-      // eslint-disable-next-line no-unused-vars
     } catch (erro) {
       next(erro);
     }
