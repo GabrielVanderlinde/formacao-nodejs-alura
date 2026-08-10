@@ -9,7 +9,7 @@ class LivroController {
         .exec();
 
       res.status(200).json(livrosResultado);
-    } catch (erro) {
+    } catch {
       res.status(500).json({ message: "Erro interno no servidor" });
     }
   }
@@ -71,7 +71,7 @@ class LivroController {
       const livrosResultado = await livros.find({"editora": editora});
 
       res.status(200).send(livrosResultado);
-    } catch (erro) {
+    } catch {
       res.status(500).json({ message: "Erro interno no servidor" });
     }
   }

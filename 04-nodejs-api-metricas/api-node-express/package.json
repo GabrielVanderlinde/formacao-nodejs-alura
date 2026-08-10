@@ -6,12 +6,16 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.1",
+    "globals": "^17.9.0",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
