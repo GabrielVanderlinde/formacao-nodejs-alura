@@ -5,4 +5,4 @@ var idade = 19;
 // var pode
 // let, const não podem ser referenciadas antes da inicializacao
 
-console.log('Minha idade depois de declarada é:', idade);
+console.log("Minha idade depois de declarada é:", idade);

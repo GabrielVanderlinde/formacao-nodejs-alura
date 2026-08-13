@@ -18,5 +18,5 @@
 //     tentativas++
 // }
 
-// let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa' 
+// let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa'
 // alert(`O número secreto era ${numeroSecreto} e você acertou com apenas ${tentativas} ${palavraTentativa}`)

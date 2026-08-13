@@ -14,7 +14,7 @@ Nesta aula, aprendemos:
 
 ## Pontos de atenção
 
-- Valores falsy em JS: `false`, `0`, `""`, `null`, `undefined` e `NaN`. Todo o resto é truthy — 
+- Valores falsy em JS: `false`, `0`, `""`, `null`, `undefined` e `NaN`. Todo o resto é truthy —
   inclusive `"0"` (string) e `[]` (array vazio), o que costuma pegar quem vem de outras linguagens.
 - `switch` usa comparação estrita (`===`) internamente, então cuidado com tipos diferentes.
 
@@ -32,13 +32,13 @@ Conteúdo "para saber mais" dessa aula, introduzindo conceitos que serão aprofu
 ### Exemplo — ordem de execução com `setTimeout`
 
 ```javascript
-console.log('Início');
+console.log("Início");
 
 setTimeout(() => {
-  console.log('Tarefa assíncrona concluída');
+  console.log("Tarefa assíncrona concluída");
 }, 1000);
 
-console.log('Fim');
+console.log("Fim");
 
 // Saída: Início -> Fim -> Tarefa assíncrona concluída
 ```
@@ -50,14 +50,14 @@ console.log('Fim');
 function fetchData() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve('Dados obtidos');
+      resolve("Dados obtidos");
     }, 1000);
   });
 }
 
 fetchData()
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));
 
 // Usando Async/Await
 async function getData() {

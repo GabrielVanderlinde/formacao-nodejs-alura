@@ -12,13 +12,13 @@ Curso prático de Node.js focado na construção de uma biblioteca própria em J
 
 ## Progresso
 
-| # | Aula | Status |
-|---|------|--------|
-| 01 | [Acessando e Lendo Arquivos](aula-01-acessando-e-lendo-arquivos/README.md) | ✅ |
-| 02 | [Criando a Lógica do Projeto](aula-02-criando-a-logica-do-projeto/README.md) | ✅ |
-| 03 | [Tratamento de Erros](aula-03-tratamento-de-erros/README.md) | ✅ |
-| 04 | [Import/Export e Promessas](aula-04-import-export-e-promessas/README.md) | ✅ |
-| 05 | [O NPM e suas Bibliotecas](aula-05-npm-e-suas-bibliotecas/README.md) | ✅ |
+| #   | Aula                                                                         | Status |
+| --- | ---------------------------------------------------------------------------- | ------ |
+| 01  | [Acessando e Lendo Arquivos](aula-01-acessando-e-lendo-arquivos/README.md)   | ✅     |
+| 02  | [Criando a Lógica do Projeto](aula-02-criando-a-logica-do-projeto/README.md) | ✅     |
+| 03  | [Tratamento de Erros](aula-03-tratamento-de-erros/README.md)                 | ✅     |
+| 04  | [Import/Export e Promessas](aula-04-import-export-e-promessas/README.md)     | ✅     |
+| 05  | [O NPM e suas Bibliotecas](aula-05-npm-e-suas-bibliotecas/README.md)         | ✅     |
 
 ## Principais conceitos abordados
 
@@ -56,4 +56,4 @@ O curso é concluído com um projeto prático que integra todos os conceitos vis
 
 ## Contexto
 
-Terceiro curso da **Formação Node.js**, seguindo os cursos de *JavaScript: Aprendendo a Programar* e *Git e GitHub: Compartilhando e Colaborando em Projetos*.
+Terceiro curso da **Formação Node.js**, seguindo os cursos de _JavaScript: Aprendendo a Programar_ e _Git e GitHub: Compartilhando e Colaborando em Projetos_.

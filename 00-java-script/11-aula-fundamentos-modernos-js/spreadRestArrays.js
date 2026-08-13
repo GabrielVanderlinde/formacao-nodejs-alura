@@ -15,6 +15,6 @@ console.log(todasFrutas);
 
 const [primeira, segunda, restante] = todasFrutas;
 
-console.log(primeira)
+console.log(primeira);
 console.log(segunda);
 console.log(restante);

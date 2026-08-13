@@ -25,9 +25,7 @@
             },
             "url": {
               "raw": "{{Livro}}",
-              "host": [
-                "{{Livro}}"
-              ]
+              "host": ["{{Livro}}"]
             }
           },
           "response": []
@@ -46,12 +44,8 @@
             },
             "url": {
               "raw": "{{Livro}}/2",
-              "host": [
-                "{{Livro}}"
-              ],
-              "path": [
-                "2"
-              ]
+              "host": ["{{Livro}}"],
+              "path": ["2"]
             }
           },
           "response": []
@@ -63,9 +57,7 @@
             "header": [],
             "url": {
               "raw": "{{Livro}}",
-              "host": [
-                "{{Livro}}"
-              ]
+              "host": ["{{Livro}}"]
             }
           },
           "response": []
@@ -86,12 +78,8 @@
             },
             "url": {
               "raw": "{{Livro}}/1",
-              "host": [
-                "{{Livro}}"
-              ],
-              "path": [
-                "1"
-              ]
+              "host": ["{{Livro}}"],
+              "path": ["1"]
             }
           },
           "response": []
@@ -107,12 +95,8 @@
             },
             "url": {
               "raw": "{{Livro}}/1",
-              "host": [
-                "{{Livro}}"
-              ],
-              "path": [
-                "1"
-              ]
+              "host": ["{{Livro}}"],
+              "path": ["1"]
             }
           },
           "response": []
@@ -124,12 +108,8 @@
             "header": [],
             "url": {
               "raw": "{{Livro}}/busca",
-              "host": [
-                "{{Livro}}"
-              ],
-              "path": [
-                "busca"
-              ]
+              "host": ["{{Livro}}"],
+              "path": ["busca"]
             }
           },
           "response": []
@@ -155,9 +135,7 @@
             },
             "url": {
               "raw": "{{Autor}}",
-              "host": [
-                "{{Autor}}"
-              ]
+              "host": ["{{Autor}}"]
             }
           },
           "response": []
@@ -176,12 +154,8 @@
             },
             "url": {
               "raw": "{{Autor}}/6a75d632e6adcad523f75b72",
-              "host": [
-                "{{Autor}}"
-              ],
-              "path": [
-                "6a75d632e6adcad523f75b72"
-              ]
+              "host": ["{{Autor}}"],
+              "path": ["6a75d632e6adcad523f75b72"]
             }
           },
           "response": []
@@ -193,9 +167,7 @@
             "header": [],
             "url": {
               "raw": "{{Autor}}",
-              "host": [
-                "{{Autor}}"
-              ]
+              "host": ["{{Autor}}"]
             }
           },
           "response": []
@@ -216,12 +188,8 @@
             },
             "url": {
               "raw": "{{Autor}}/6a75d632e6adcad523f75b72",
-              "host": [
-                "{{Autor}}"
-              ],
-              "path": [
-                "6a75d632e6adcad523f75b72"
-              ]
+              "host": ["{{Autor}}"],
+              "path": ["6a75d632e6adcad523f75b72"]
             }
           },
           "response": []
@@ -237,12 +205,8 @@
             },
             "url": {
               "raw": "{{Autor}}/6a75d632e6adcad523f75b72",
-              "host": [
-                "{{Autor}}"
-              ],
-              "path": [
-                "6a75d632e6adcad523f75b72"
-              ]
+              "host": ["{{Autor}}"],
+              "path": ["6a75d632e6adcad523f75b72"]
             }
           },
           "response": []

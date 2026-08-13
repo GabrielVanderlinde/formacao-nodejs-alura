@@ -26,6 +26,7 @@ Curso prático de construção de uma API do zero, seguindo o estilo arquitetura
 ## Principais aprendizados
 
 ### 1. Criando o projeto com Node.js
+
 - O que são APIs e os diferentes tipos de API existentes.
 - O que é o Node.js e seu papel na execução de JavaScript no servidor.
 - Criação de um servidor básico com Node.js puro, sem framework.
@@ -34,6 +35,7 @@ Curso prático de construção de uma API do zero, seguindo o estilo arquitetura
 - Funcionamento de gerenciadores de pacotes (NPM).
 
 ### 2. Express e primeiras rotas
+
 - Instalação e uso do Postman para testar requisições.
 - Início de um projeto com o framework Express.
 - Partes que compõem uma requisição e uma resposta HTTP.
@@ -41,6 +43,7 @@ Curso prático de construção de uma API do zero, seguindo o estilo arquitetura
 - O CRUD (Create, Read, Update, Delete) e sua relação direta com os métodos HTTP.
 
 ### 3. Persistindo dados
+
 - Conceitos gerais de bancos de dados e mais sobre NoSQL.
 - Criação de banco e coleção no MongoDB Atlas.
 - Conexão do MongoDB com a API.
@@ -48,12 +51,14 @@ Curso prático de construção de uma API do zero, seguindo o estilo arquitetura
 - Acesso à coleção de livros através da aplicação.
 
 ### 4. Evoluindo a API
+
 - Criação de um controller para o recurso de livro, separando lógica das rotas.
 - Implementação dos controllers de `POST`, `PUT` e `DELETE`.
 - Uso do bloco `try/catch` para tratamento de erros nos controllers.
 - Definição e organização das rotas conectadas aos respectivos controllers.
 
 ### 5. Adicionando funcionalidades
+
 - Criação do recurso de autores e relacionamento entre coleções no MongoDB.
 - Diferença entre as estratégias **Embed** e **Reference**.
 - Implementação de buscas por parâmetro (query params) e estrutura de uma URL.
@@ -82,4 +87,4 @@ API REST completa de livros e autores, com CRUD completo, persistência em Mongo
 
 ## Contexto
 
-Terceiro curso da **Formação Node.js**, seguindo os cursos de *JavaScript: Aprendendo a Programar*, *Git e GitHub: Compartilhando e Colaborando em Projetos* e *JavaScript/Node.js: Criando Sua Primeira Biblioteca*.
+Terceiro curso da **Formação Node.js**, seguindo os cursos de _JavaScript: Aprendendo a Programar_, _Git e GitHub: Compartilhando e Colaborando em Projetos_ e _JavaScript/Node.js: Criando Sua Primeira Biblioteca_.

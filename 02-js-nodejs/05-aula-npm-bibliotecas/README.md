@@ -23,9 +23,7 @@ Nesta aula, aprendemos:
 
 ## Referências
 
--
-
----
+- ***
 
 ## 🏁 Projeto final do curso
 
