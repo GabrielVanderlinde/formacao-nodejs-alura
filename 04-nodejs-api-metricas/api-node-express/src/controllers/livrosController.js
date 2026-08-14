@@ -78,10 +78,9 @@ class LivroController {
 
         req.resultado = livrosResultado;
         next();
-
-        res.status(200).send(livrosResultado);
       } else {
-        res.status(200).send([]);
+        req.resultado = [];
+        next();
       }
     } catch (erro) {
       next(erro);

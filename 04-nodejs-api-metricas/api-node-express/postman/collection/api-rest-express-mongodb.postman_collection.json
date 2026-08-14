@@ -34,7 +34,19 @@
               "path": ["livros"]
             }
           },
-          "response": []
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "pm.environment.set(\"livroId\", jsonData._id);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
         },
         {
           "name": "ReadById",
@@ -128,7 +140,7 @@
                   "key": "editora",
                   "value": "{{editora}}",
                   "description": "Filtro por editora exata",
-                  "disabled": true
+                  "disabled": false
                 },
                 {
                   "key": "titulo",
@@ -153,91 +165,6 @@
                   "value": "{{nomeAutor}}",
                   "description": "Nome do autor (case insensitive)",
                   "disabled": true
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "ReadByFilterEditora",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/livros/busca?editora={{editora}}",
-              "host": ["{{baseUrl}}"],
-              "path": ["livros", "busca"],
-              "query": [
-                {
-                  "key": "editora",
-                  "value": "{{editora}}",
-                  "description": "Filtro por editora exata"
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "ReadByFilterTitulo",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/livros/busca?titulo={{titulo}}",
-              "host": ["{{baseUrl}}"],
-              "path": ["livros", "busca"],
-              "query": [
-                {
-                  "key": "titulo",
-                  "value": "{{titulo}}",
-                  "description": "Filtro por título (case insensitive)"
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "ReadByFilterPaginas",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/livros/busca?minPaginas={{minPaginas}}&maxPaginas={{maxPaginas}}",
-              "host": ["{{baseUrl}}"],
-              "path": ["livros", "busca"],
-              "query": [
-                {
-                  "key": "minPaginas",
-                  "value": "{{minPaginas}}",
-                  "description": "Número mínimo de páginas"
-                },
-                {
-                  "key": "maxPaginas",
-                  "value": "{{maxPaginas}}",
-                  "description": "Número máximo de páginas"
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "ReadByFilterAutor",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/livros/busca?nomeAutor={{nomeAutor}}",
-              "host": ["{{baseUrl}}"],
-              "path": ["livros", "busca"],
-              "query": [
-                {
-                  "key": "nomeAutor",
-                  "value": "{{nomeAutor}}",
-                  "description": "Nome do autor (case insensitive)"
                 }
               ]
             }
@@ -274,7 +201,19 @@
               "path": ["autores"]
             }
           },
-          "response": []
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "pm.environment.set(\"autorId\", jsonData._id);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
         },
         {
           "name": "ReadById",

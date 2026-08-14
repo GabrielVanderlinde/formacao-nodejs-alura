@@ -9,10 +9,8 @@ class AutorController {
       req.resultado = autoresResultado;
 
       next();
-
-      res.status(200).json(autoresResultado);
-    } catch {
-      res.status(500).json({ message: "Erro interno no servidor" });
+    } catch (erro) {
+      next(erro);
     }
   };
 
