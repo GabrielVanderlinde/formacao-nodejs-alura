@@ -1,0 +1,348 @@
+{
+  "info": {
+    "_postman_id": "c8759406-3207-4d11-a236-d8ce1a6fadec",
+    "name": "api-rest-express-mongodb",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51739385"
+  },
+  "item": [
+    {
+      "name": "Livro",
+      "item": [
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"titulo\": \"Cartas de um Diabo a seu Aprendiz\",\n    \"editora\": \"Alura\",\n    \"numeroPaginas\": 250,\n    \"autor\": \"{{autorId}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/livros",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReadById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/livros/{{livroId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros", "{{livroId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/livros?limite={{limite}}&pagina={{pagina}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros"],
+              "query": [
+                {
+                  "key": "limite",
+                  "value": "{{limite}}",
+                  "description": "Número de registros por página (padrão: 5)"
+                },
+                {
+                  "key": "pagina",
+                  "value": "{{pagina}}",
+                  "description": "Número da página (padrão: 1)"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateById",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"titulo\": \"O Senhor dos Anéis\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/livros/{{livroId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros", "{{livroId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/livros/{{livroId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros", "{{livroId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReadByFilter",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/livros/busca?editora={{editora}}&titulo={{titulo}}&minPaginas={{minPaginas}}&maxPaginas={{maxPaginas}}&nomeAutor={{nomeAutor}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros", "busca"],
+              "query": [
+                {
+                  "key": "editora",
+                  "value": "{{editora}}",
+                  "description": "Filtro por editora exata",
+                  "disabled": true
+                },
+                {
+                  "key": "titulo",
+                  "value": "{{titulo}}",
+                  "description": "Filtro por título (case insensitive)",
+                  "disabled": true
+                },
+                {
+                  "key": "minPaginas",
+                  "value": "{{minPaginas}}",
+                  "description": "Número mínimo de páginas",
+                  "disabled": true
+                },
+                {
+                  "key": "maxPaginas",
+                  "value": "{{maxPaginas}}",
+                  "description": "Número máximo de páginas",
+                  "disabled": true
+                },
+                {
+                  "key": "nomeAutor",
+                  "value": "{{nomeAutor}}",
+                  "description": "Nome do autor (case insensitive)",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReadByFilterEditora",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/livros/busca?editora={{editora}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros", "busca"],
+              "query": [
+                {
+                  "key": "editora",
+                  "value": "{{editora}}",
+                  "description": "Filtro por editora exata"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReadByFilterTitulo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/livros/busca?titulo={{titulo}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros", "busca"],
+              "query": [
+                {
+                  "key": "titulo",
+                  "value": "{{titulo}}",
+                  "description": "Filtro por título (case insensitive)"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReadByFilterPaginas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/livros/busca?minPaginas={{minPaginas}}&maxPaginas={{maxPaginas}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros", "busca"],
+              "query": [
+                {
+                  "key": "minPaginas",
+                  "value": "{{minPaginas}}",
+                  "description": "Número mínimo de páginas"
+                },
+                {
+                  "key": "maxPaginas",
+                  "value": "{{maxPaginas}}",
+                  "description": "Número máximo de páginas"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReadByFilterAutor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/livros/busca?nomeAutor={{nomeAutor}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["livros", "busca"],
+              "query": [
+                {
+                  "key": "nomeAutor",
+                  "value": "{{nomeAutor}}",
+                  "description": "Nome do autor (case insensitive)"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Autor",
+      "item": [
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"C.S Lewis\",\n    \"nacionalidade\": \"Irlanda\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/autores",
+              "host": ["{{baseUrl}}"],
+              "path": ["autores"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReadById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/autores/{{autorId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["autores", "{{autorId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/autores",
+              "host": ["{{baseUrl}}"],
+              "path": ["autores"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateById",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nacionalidade\": \"Inglaterra\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/autores/{{autorId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["autores", "{{autorId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/autores/{{autorId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["autores", "{{autorId}}"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

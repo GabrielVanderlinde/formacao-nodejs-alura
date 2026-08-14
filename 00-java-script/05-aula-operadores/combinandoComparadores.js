@@ -5,7 +5,6 @@ const possuiCNH = false;
 const podeDirigir = maiorDeIdade && possuiCNH; // AND
 console.log("Pode dirigir? " + podeDirigir);
 
-
 // ---------------------------------
 
 const podeViajarSozinha = maiorDeIdade || possuiCNH; // OR
@@ -20,4 +19,4 @@ console.log("Precisa de acompanhante? " + precisaAcompanhante);
 // OR ||
 // NOT !
 
-maiorIdade && possuiCNH || !precisaAcompanhante; // true && false = false
+(maiorIdade && possuiCNH) || !precisaAcompanhante; // true && false = false

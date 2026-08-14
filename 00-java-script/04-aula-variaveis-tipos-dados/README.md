@@ -17,7 +17,7 @@ Nesta aula, aprendemos:
 
 - const sempre que o valor não mudar
 - let quando precisar atualizar o valor
-- 
+-
 
 ## Referências
 

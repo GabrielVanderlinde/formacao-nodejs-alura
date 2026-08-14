@@ -28,4 +28,7 @@ const resultadoMultiplicacao = calcular(5, 5, multiplicacao); // multiplicação
 console.log("O resultado para o cálculo de soma é: ", resultadoSoma);
 console.log("O resultado para o cálculo de subtração é: ", resultadoSubtracao);
 console.log("O resultado para o cálculo de divisão é: ", resultadoDivisao);
-console.log("O resultado para o cálculo de multiplicação é: ", resultadoMultiplicacao);
+console.log(
+  "O resultado para o cálculo de multiplicação é: ",
+  resultadoMultiplicacao,
+);

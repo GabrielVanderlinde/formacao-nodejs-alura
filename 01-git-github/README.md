@@ -23,6 +23,7 @@ Curso prático sobre versionamento de código com Git e colaboração via GitHub
 ## Principais aprendizados
 
 ### 1. Compartilhando projetos
+
 - Diferença entre **Git** (ferramenta de versionamento local) e **GitHub** (plataforma de hospedagem remota de repositórios).
 - Criação de conta e repositório no GitHub, incluindo diferenças entre repositórios públicos e privados.
 - Instalação do Git e inicialização de um repositório local com `git init`.
@@ -30,6 +31,7 @@ Curso prático sobre versionamento de código com Git e colaboração via GitHub
 - Conexão entre repositório local e remoto com `git remote`.
 
 ### 2. Colaborando em projetos
+
 - Clonar um repositório existente com `git clone`.
 - Fluxo básico de commit: `git add` → `git commit` → `git push`.
 - Boas práticas para mensagens de commit (claras, no imperativo, descrevendo o "porquê" da mudança).
@@ -38,12 +40,14 @@ Curso prático sobre versionamento de código com Git e colaboração via GitHub
 - Adição de colaboradores em um repositório e outras formas de colaborar (forks, pull requests).
 
 ### 3. Utilizando Git na IDE
+
 - Uso do Git integrado diretamente na interface do VS Code (sem depender só do terminal).
 - Simulação prática de conflitos de merge.
 - Resolução de conflitos manualmente e com o **Merge Editor** do VS Code.
 - Entendimento de como e por que conflitos acontecem (mesmas linhas alteradas em branches/commits diferentes).
 
 ### 4. Voltando no tempo
+
 - Desfazer um commit já realizado.
 - Uso do `git reset` e suas variações (`--soft`, `--mixed`, `--hard`).
 - Alterar o último commit com `git commit --amend`.
@@ -51,6 +55,7 @@ Curso prático sobre versionamento de código com Git e colaboração via GitHub
 - Cuidados ao reescrever histórico compartilhado (evitar `reset`/`amend` em commits já enviados a um repositório compartilhado com outras pessoas).
 
 ### 5. Mais recursos
+
 - Criação e formatação de um `README.md` com Markdown.
 - README especial de perfil do GitHub (`usuario/usuario`).
 - Uso do `.gitignore` para excluir arquivos do controle de versão.
