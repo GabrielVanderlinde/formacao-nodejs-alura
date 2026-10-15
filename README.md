@@ -24,10 +24,10 @@ Este nível fornece as ferramentas para construir APIs REST com Express, consoli
 | JavaScript com Node.js: criando sua primeira biblioteca | Concluído |
 | Node.js: criando uma API Rest com Express e MongoDB | Concluído |
 | Node.js: lidando com buscas, filtros, paginação e erros em uma API | Concluído |
-| DevOps: construindo e gerindo containers com o Docker | Pendente |
-| Node.js: implementando testes em uma API | Pendente |
+| DevOps: construindo e gerindo containers com o Docker | Concluído |
+| Node.js: implementando testes em uma API | Cursando |
 | Node.JS: melhorando o fluxo de desenvolvimento e integração de sua equipe | Pendente |
-| Cloud: realize o deploy de aplicações na AWS | Pendente |
+| Cloud: realize o deploy de aplicações na AWS | Concluído |
 
 ### Q2 - Nível 1 (20/10/2026 - 20/01/2027)
 
